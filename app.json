@@ -1,0 +1,46 @@
+{
+    "name": "𝗗𝗔𝗫𝗫 𝗛𝗔𝗖𝗞 𝗕𝗢𝗧",
+    "description": "𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗠𝗔𝗞𝗘 𝗕𝗬 𝗗𝗔𝗫𝗫 𝗧𝗘𝗔𝗠",
+    "logo": "",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "banall"
+    ],
+    "website": "https://t.me/Iam_daxx",
+    "repository": "https://github.com/DAXXTEAM/DAXXSTRINGHACK",
+    "success_url": "https://t.me/Mr_Daxx",
+    "env": {
+        "API_ID": {
+            "description": "your API_ID ",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "your API_HASH ",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "your bot token",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "Basic"
+        }
+    },
+    "stack": "container"
+    }
