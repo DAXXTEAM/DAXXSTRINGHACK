@@ -17,7 +17,7 @@ START_PIC = Config.START_PIC
 
 
 if not START_PIC:
-    START_PIC = "https://telegra.ph/file/a8ba8edd60489a54f2f84.jpg"
+    START_PIC = "https://telegra.ph/file/73cd2c73ff6d19923774c.jpg"
 
 #rich
 LOG = Console()
@@ -34,7 +34,7 @@ app = Client(
     
 
 
-async def Daxxhack():
+async def DAXXSTRINGHACK():
     os.system("clear")
     header = Table(show_header=True, header_style="bold green")
     header.add_column(LOG_TEXT)
@@ -47,11 +47,3 @@ async def Daxxhack():
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(DAXXSTRINGHACK())    
-
-
-
-    
-    
-
-    
-    
