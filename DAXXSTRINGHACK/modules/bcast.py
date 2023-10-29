@@ -1,8 +1,9 @@
 from pyrogram import filters
 from config import Config
 
-
-
+from DAXXSTRINGHACK import app
+from DAXXSTRINGHACK.Helpers.mongo import get_served_chats
+from DAXXSTRINGHACK.Helpers.mongo import get_served_users
 
 IS_BROADCASTING = False
 SUDOERS = Config.SUDOERS
@@ -16,7 +17,7 @@ async def braodcast_message(client, message):
         y = message.chat.id
     else:
         if len(message.command) < 2:
-            return await message.reply_text(_["broad_5"])
+            return await message.reply_text("**Usage**:\n/broadcast [MESSAGE] or [Reply to a Message]")
         query = message.text.split(None, 1)[1]
         if "-pin" in query:
             query = query.replace("-pin", "")
@@ -27,7 +28,7 @@ async def braodcast_message(client, message):
         if "-user" in query:
             query = query.replace("-user", "")
         if query == "":
-            return await message.reply_text(_["broad_6"])
+            return await message.reply_text("Please provide some text to broadcast.")
 
     IS_BROADCASTING = True
 
@@ -69,7 +70,7 @@ async def braodcast_message(client, message):
             except Exception:
                 continue
         try:
-            await message.reply_text(_["broad_1"].format(sent, pin))
+            await message.reply_text("**Broadcasted Message In {0}  Chats with {1} Pins from Bot.**".format(sent, pin))
         except:
             pass
 
@@ -96,7 +97,7 @@ async def braodcast_message(client, message):
             except Exception:
                 pass
         try:
-            await message.reply_text(_["broad_7"].format(susr))
+            await message.reply_text("**Broadcasted Message to {0} Users.**".format(susr))
         except:
             pass
     IS_BROADCASTING = False
