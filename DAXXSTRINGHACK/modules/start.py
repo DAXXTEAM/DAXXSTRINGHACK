@@ -1,13 +1,16 @@
 from pyrogram import filters
 from DAXXSTRINGHACK import app , START_PIC
 from DAXXSTRINGHACK.Helpers.data import PM_TEXT,PM_BUTTON,HACK_MODS,HACK_TEXT
+from DAXXSTRINGHACK.Helpers.mongo import add_served_user
 from pyrogram.types import CallbackQuery
 
 
 @app.on_message(filters.command("start") & filters.private)
 async def _start(_, message):
+    user_id = message.from_user.id
     user = message.from_user.mention
-    bot = (await _.get_me()).mention 
+    bot = (await _.get_me()).mention
+    await add_served_user(user_id)
     await message.reply_photo(
        photo = START_PIC,
        caption = PM_TEXT.format(user, bot),
@@ -24,4 +27,5 @@ async def _hack(_, message):
 async def heck_callback(bot : app, query : CallbackQuery):
     await query.message.delete()
     await query.message.reply_text(HACK_TEXT,
-              reply_markup = HACK_MODS) 
+              reply_markup = HACK_MODS)
+
