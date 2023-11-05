@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00FF00&width=420&lines=𝗗𝗔𝗫𝗫+𝗦𝗧𝗥𝗜𝗡𝗚+𝗛𝗔𝗖𝗞+𝗕𝗢𝗧+𝗕𝗬+𝗗𝗔𝗫𝗫𝗧𝗘𝗔𝗠">
+<img src="https://readme-typing-svg.herokuapp.com?color=00FF00&width=420&lines=𝗦𝗧𝗥𝗜𝗡𝗚+𝗛𝗔𝗖𝗞+𝗕𝗢𝗧+𝗕𝗬+𝗗𝗔𝗫𝗫𝗧𝗘𝗔𝗠">
 
 
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DAXXTEAM&repo=DAXXSTRINGHACK&theme=flag-india)
